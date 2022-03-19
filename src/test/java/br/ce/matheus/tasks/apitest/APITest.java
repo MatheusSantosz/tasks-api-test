@@ -2,6 +2,7 @@ package br.ce.matheus.tasks.apitest;
 
 
 import org.junit.Test;
+
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.hamcrest.CoreMatchers;
@@ -12,7 +13,7 @@ public class APITest {
 	@BeforeClass
 	public static void setup () {
 		
-		RestAssured.baseURI = "http://localhost:8001/tasks-backend";
+		RestAssured.baseURI = "http://localhost:8001/tasks-backendd";
 		
 	}
 	
@@ -25,7 +26,6 @@ public class APITest {
 			.statusCode(200)
 		;	
 	}
-
 
 	@Test
 	public void deveAdicionarTarefaComSucesso () {
